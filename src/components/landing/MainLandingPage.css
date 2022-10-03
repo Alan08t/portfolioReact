@@ -1,0 +1,31 @@
+.mainLandingPage {
+    width: 0%;
+    height: 50%;
+    padding-left: 1%;
+
+}
+
+
+.active {
+    animation-name: mainWidth; 
+    animation-duration: 1.5s;
+    display: flex;
+    width: 60%;
+    border: solid var(--main-color);
+
+    border-width: 0 0px 3px 0;
+
+ 
+    }
+
+
+
+
+@keyframes mainWidth {
+    
+    0%{width: 0%; height: 0%;}
+    80%{width: 30%; height: 40%;}
+    100%{width: 60%; height: 50%;}
+}
+
+

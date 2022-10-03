@@ -1,0 +1,81 @@
+.bannerHeader {
+    position: absolute;
+    color: var(--font-color);
+    font-family: 'Nanum Gothic';
+    font-weight: 100;
+    font-size: 5rem;
+    text-shadow: 3px 3px 1px var(--black);
+    background-color: transparent;
+    transition: background .2s, color .0s, text-shadow 0.2s;
+    padding: 1%;
+}
+
+.bannerHeader:hover {
+    background: var(--main-color);
+    cursor: none;
+    color: var(--black);
+    text-shadow: 3px 3px 1px var(--effect-color);
+
+
+}
+
+
+.bannerHeader::after {
+    position: absolute;
+    display: block;
+    content: '';
+    background-color: var(--effect-color);
+    width: 5%;
+    height: 2%;
+    bottom: 5%;
+    animation-name: headerEffect;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+
+}
+
+.bannerHeader:hover::after {
+    background-color: var(--black);
+}
+
+
+
+
+@keyframes headerEffect {
+    0%{left: 0;}
+    20%{left: 30%;}
+    50%{left: 90%;}
+    60%{left: 50%;}
+    70%{left: 150%;}
+    80%{left: 100%;}
+    100%{left: 0;}
+
+
+
+
+}
+
+
+
+.spanHeader {
+    color: var(--black);
+    font-family: 'Nanum Gothic';
+    font-weight: 100;
+    font-size: 5rem;
+    background-color: transparent;
+    transition: text-shadow 0.2s ease-in-out;
+    padding: 1%;
+}
+
+
+
+
+.spanHeader:hover {
+    color: var(--black);
+    font-family: 'Nanum Gothic';
+    font-weight: 100;
+    font-size: 5rem;
+    text-shadow: 3px 3px 1px var(--effect-color);
+    background-color: transparent;
+    padding: 1%;
+}

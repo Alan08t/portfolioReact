@@ -1,0 +1,44 @@
+/* theme colores */
+
+* {
+
+  --main-color: #98ff96;
+  --secondary-color: #006414;
+  --background-color: #003400;
+  --font-color: #5ccb5f;
+  --effect-color: #009929;
+  --black: #000;
+
+
+}
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  scroll-behavior: smooth;
+  scroll-padding: 75px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+
+html {
+  background: var(--black);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nanum Gothic';
+  position: relative;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

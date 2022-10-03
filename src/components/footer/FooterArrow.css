@@ -1,0 +1,53 @@
+.footerArrow {
+    position: relative;
+    top: 20%;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: var(--black);
+    transform: scale(0.9, 0.7) rotate(45deg) translate(-30%, -30%);
+    border: 3px solid white;
+    border-width: 3px 0px 0px 3px;
+    transition: all .3s ease-in-out;
+
+
+}
+
+
+
+.footerArrow::after {
+    position: relative;
+    display: inline-block;
+    content: '';
+    border: solid var(--main-color);
+    border-width: 0 3px 3px 0;
+    transition: all .3s;
+    width: 10px;
+    height: 10px;
+    bottom: -25%;
+    right: -25%;
+    transform: rotate(180deg);
+}
+
+
+
+.footerArrow:hover {
+    cursor: pointer;
+    animation-name: arrowEffects;
+    animation-duration: .8s;
+    animation-iteration-count: infinite;
+    border: solid var(--main-color);
+    border-width: 3px 1px 1px 3px;
+    background-color: var(--black);
+
+}
+
+
+@keyframes arrowEffects {
+
+    0%{bottom: 0; box-shadow: 10px 10px 30px var(--effect-color);translate: 0px 0px;}
+    70%{bottom: 10px; box-shadow: 10px 10px 30px var(--secondary-color);translate: 0px 3px;}
+    100%{bottom: 0; box-shadow: 10px 10px 30px var(--effect-color);translate: 0px 0px;
+    }
+    
+}

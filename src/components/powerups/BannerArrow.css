@@ -1,0 +1,46 @@
+.bannerArrow {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    border: solid var(--main-color);
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    transition: all .3s ease-in-out;
+    width: 10px;
+    height: 10px;
+    padding: 40px;
+    box-shadow: 10px 10px 30px var(--effect-color);
+}
+
+.bannerArrow::after {
+    position: relative;
+    display: inline-block;
+    content: '';
+    border: solid var(--main-color);
+    border-width: 0 3px 3px 0;
+    transition: all .3s;
+    width: 10px;
+    height: 10px;
+    bottom: 0px;
+}
+
+.bannerArrow:hover {
+    cursor: pointer;
+    bottom: -15px;
+    animation-name: arrowEffects;
+    animation-duration: .8s;
+    animation-iteration-count: infinite;
+    border: solid var(--main-color);
+    border-width: 1px 3px 3px 1px;
+    background-color: var(--black);
+
+}
+
+
+@keyframes arrowEffects {
+
+    0%{bottom: 0; box-shadow: 10px 10px 30px var(--effect-color);}
+    70%{bottom: 10px; box-shadow: 10px 10px 30px var(--secondary-color);}
+    100%{bottom: 0; box-shadow: 10px 10px 30px var(--effect-color);}
+    
+}

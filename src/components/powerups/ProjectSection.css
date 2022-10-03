@@ -1,0 +1,136 @@
+.skillsSection {
+    display: flex;
+    margin: auto;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    width: 90%;
+    height: 70vh;
+    background-color: var(--black);
+    border: 2px solid white;
+    border-width: 0px 3px 3px 0px;
+    box-shadow: -4px -4px 8px var(--effect-color);
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.projectSection {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.controlersSection {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    flex-direction: column;
+}
+
+
+.upButton {
+    position: relative;
+display: flex;
+width: 100%;
+height: 50%;
+background: var(--black);
+align-items: center;
+justify-content: center;
+}
+
+
+.upButton::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 10%;
+    height: 10%;
+    border: 2px solid white;
+    border-width: 2px 0px 0px 2px;
+    transform: rotate(45deg);
+    transition: all .3s ease;
+
+}
+
+
+.downButton {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background: var(--black);
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease;
+}
+
+
+.downButton::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 10%;
+    height: 10%;
+    border: 2px solid white;
+    border-width: 2px 0px 0px 2px;
+    transform: rotate(225deg);
+    transition: all .3s ease;
+
+}
+
+
+
+.downButton:hover {
+    cursor: pointer;
+
+
+}
+
+
+.downButton:hover::after {
+    box-shadow: 1px 1px 5px var(--main-color);    
+
+}
+
+
+.upButton:hover {
+    cursor: pointer;
+
+
+}
+
+
+.upButton:hover::after {
+    box-shadow: 1px 1px 5px var(--main-color);    
+
+}
+
+
+
+.loading {
+        display: flex;
+        margin: auto;
+        margin-top: 2.5vh;
+        margin-bottom: 2.5vh;
+        width: 90%;
+        height: 70vh;
+        background-color: var(--black);
+        border: 2px solid white;
+        border-width: 0px 3px 3px 0px;
+        box-shadow: -4px -4px 8px var(--effect-color);
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+        color: white;
+}
+    

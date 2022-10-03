@@ -1,0 +1,112 @@
+@keyframes btnAnimation {
+    0%{background-color: var(--black);}
+    20%{background-color: var(--black);}
+    21%{background-color: var(--effect-color);}
+    22%{background-color: var(--black);}
+    23%{background-color: var(--effect-color);}
+    24%{background-color: var(--black);}
+    89%{background-color: var(--black);}
+    90%{background-color: var(--effect-color);}
+    91%{background-color: var(--black);}
+
+    100%{background-color: var(--black);}
+}
+
+
+.navBar .navBar-button {
+    position: relative;
+    padding: 2%;
+    margin: 2%;
+    width: 20%;
+    background: var(--black);
+    transition: border .2s, border-width .2s, width .2s, box-shadow .2s;
+    border: solid rgb(207, 207, 207);
+    border-width: 0 3px 3px 0;
+    box-shadow: -2px -2px 8px var(--effect-color);
+
+
+
+}
+
+.navBar .navBar-button:hover {
+    border: 6px solid var(--main-color);
+    border-width: 1px 3px 3px 1px;
+    width: 40%;    
+    cursor: pointer;
+    animation-name: btnAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+
+
+
+
+.navBar .navBar-button::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2%;
+    background-color: transparent;
+    display: inline-block;
+    transition: transform .4s;
+    background-color: transparent;
+    color: var(--black-color);
+
+
+
+}
+
+.navBar .navBar-button:hover::after{
+    transform: translateY(-15px);
+    width:100%;
+    border-top: 1px solid var(--effect-color);
+    border-bottom: 1px solid var(--effect-color);
+
+}
+
+
+.navBar .navBar-button::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2%;
+    display: inline-block;
+    transition: transform .4s;
+    background-color: transparent;
+
+
+}
+
+.navBar .navBar-button:hover::before{
+   transform: translateY(15px);
+   border-top: 1px solid var(--effect-color);
+   border-bottom: 1px solid var(--effect-color);
+}
+
+
+.navBar .navBar-button .navBar-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 9998;
+    color: var(--main-color);
+    width: 100%;
+    height: 100%;
+    font-family: 'Nanum Gothic';
+    font-weight: 600;
+    font-size: 2.2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.navBar.navBar-button .navBar-text:hover {
+    color: var(--main-color );
+}

@@ -1,0 +1,21 @@
+[
+    {
+            "title" : "Portfolio n 001",
+            "year": 2022,
+            "description": "Primer portfolio personal y la vez primer proyecto en React.",
+            "frontImg": "/images/portfolio_1.png"
+    },
+    {
+        "title" : "The Legendario",
+        "year": 2022,
+        "description": "Pagina web sencilla en HTML, CSS y Javascript.",
+        "frontImg": "/images/theLegendario.png"
+    },
+    {
+        "title" : "Kawaiiculator",
+        "year": 2022,
+        "description": "Calculadora en HTML, CSS y Javascript.",
+        "frontImg": "/images/kawaiiculator.png"
+}
+
+]
