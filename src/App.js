@@ -1,4 +1,4 @@
-import React, {  StrictMode, useEffect } from 'react';
+import React, {  StrictMode } from 'react';
 import './App.css';
 import NavBar from './components/navBar/NavBar'
 import  Footer  from './components/footer/Footer';
@@ -26,23 +26,6 @@ const actualMain = (state) => {
 const initPressed = () => {
   setStart(true)
 }
-
-
-useEffect(() => {
-  console.log('app effect')
-})
-
-
-
-
-
-useEffect(() => {
-  console.log('se monta la app'),
-  []})
-
-
-
-
 
     return(
   

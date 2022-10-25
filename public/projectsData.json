@@ -1,21 +1,34 @@
 [
-    {
-            "title" : "Portfolio n 001",
-            "year": 2022,
-            "description": "Primer portfolio personal y la vez primer proyecto en React.",
-            "frontImg": "/images/portfolio_1.png"
-    },
-    {
-        "title" : "The Legendario",
-        "year": 2022,
-        "description": "Pagina web sencilla en HTML, CSS y Javascript.",
-        "frontImg": "/images/theLegendario.png"
-    },
-    {
-        "title" : "Kawaiiculator",
-        "year": 2022,
-        "description": "Calculadora en HTML, CSS y Javascript.",
-        "frontImg": "/images/kawaiiculator.png"
-}
+  {
+    "title": "Portfolio n 001",
+    "year": 2022,
+    "description": "Primer portfolio personal y la vez primer proyecto en React.",
+    "frontImg": "/images/portfolio_1.png",
+    "url": "https://portfolio-at-react.netlify.app/"
 
+  },
+  {
+    "title": "The Legendario",
+    "year": 2022,
+    "description": "Pagina web sencilla en HTML, CSS y Javascript.",
+    "frontImg": "/images/theLegendario.png",
+    "url": "https://the-legendario-portfolio-at.netflify.app/"
+
+  },
+  {
+    "title": "Kawaiiculator",
+    "year": 2022,
+    "description": "Calculadora en HTML, CSS y Javascript.",
+    "frontImg": "/images/kawaiiculator.png",
+    "url": "https://kawaiiculator.netlify.app/"
+
+  },
+  {
+    "title": "ProjectCoder",
+    "year": 2022,
+    "description": "Esta aplicaciónn es mi proyecto final para el curso de JS en Coderhouse.",
+    "frontImg": "/images/projectCoder.png",
+    "url": "https://alan08t.github.io/projectCoder/"
+
+  }
 ]

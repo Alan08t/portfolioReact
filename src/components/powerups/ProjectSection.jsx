@@ -13,6 +13,8 @@ export const ProjectSection = () => {
     const [year, setYear] = useState(null)
     const [description, setDescription] = useState(null)
     const [img, setImg] = useState(null)
+    const [url, setUrl] = useState(null)
+
     const [loading, setLoading] = useState(true)
 
 
@@ -29,6 +31,7 @@ export const ProjectSection = () => {
                 setYear(data[project].year)
                 setDescription(data[project].description)
                 setImg(data[project].frontImg)
+                setUrl(data[project].url)
     
             } else {
                 console.log('Response error')
@@ -56,11 +59,11 @@ export const ProjectSection = () => {
         return (
         <div className="skillsSection">
             <div className="projectSection">
-                <Screen title={title} year={year} description= {description} img={img} ></Screen>
+                <Screen url={url} title={title} year={year} description={description} img={img} ></Screen>
                 </div>  
             <div className="controlersSection">
                 <div className="upButton" onClick={() => {
-                    if(project >= 2){
+                    if(project >= 3){
                         setProject (2)
                     }
                     else {
