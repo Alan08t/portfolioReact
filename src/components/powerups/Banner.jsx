@@ -1,4 +1,4 @@
-import React, {  useState } from "react";
+import React from "react";
 import '../powerups/Banner.css'
 import BannerHeader from "./BannerHeader";
 import BannerArrow from "./BannerArrow";
@@ -7,13 +7,10 @@ import BannerArrow from "./BannerArrow";
 const Banner = () => {
 
 
-
-    const [styles, setStyles] = useState("banner container")
-
 return(    
 
 
-        <div className={styles}>
+        <div className='banner container'>
             <div className="bannerHeaderContainer">
                 <BannerHeader/>
             </div>

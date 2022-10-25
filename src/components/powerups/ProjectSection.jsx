@@ -27,6 +27,7 @@ export const ProjectSection = () => {
               const response = await fetch('/projectsData.json');
               if (response.ok) {
                 const data = await response.json()
+                console.log(data)
                 setTitle(data[project].title)
                 setYear(data[project].year)
                 setDescription(data[project].description)
@@ -64,7 +65,7 @@ export const ProjectSection = () => {
             <div className="controlersSection">
                 <div className="upButton" onClick={() => {
                     if(project >= 3){
-                        setProject (2)
+                        setProject (3)
                     }
                     else {
                         setProject(project + 1)
